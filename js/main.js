@@ -477,6 +477,27 @@ $(document).ready(function(){
 
 /***************** detail photo hover *************************/
 
+/***************** search *************************/
+
+$('.b-header .b-search-icon').on('click', function(){
+        $('html').toggleClass('search-open');
+});
+
+$(document).on("input change", ".input-search", function(){
+    if($(this).val() !== ""){
+        $(this).parent().children(".b-clear-input").addClass("show");
+    }else{
+        $(this).parent().children(".b-clear-input").removeClass("show");
+    }
+});
+
+$(document).on("click", ".b-clear-input", function(){
+    $(this).parent().children("input").val("").change();
+    $(this).removeClass("show");
+});
+
+/***************** search *************************/
+
 /******************************************/
 
     //  var menuSlideout = new Slideout({

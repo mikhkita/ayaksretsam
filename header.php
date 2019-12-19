@@ -138,4 +138,49 @@
 				</div>
 			</div>
 		</div>
+		<div class="b-search">
+			<div class="b-search-content">
+				<form method="" action="" class="b-search-form">
+					<div class="b-input-search">
+						<button class="b-search-icon icon"></button>
+						<input type="text" name="q" class="input-search" placeholder="Поиск по сайту">
+						<div class="b-clear-input icon"></div>
+						<div class="b-line"></div>
+					</div>
+				</form>
+				<div class="b-block">
+					<div class="b-catalog-cont b-search-result">
+						<div class="b-catalog-menu">
+							<h2>Результаты поиска</h2>
+						</div>
+						<div class="b-catalog-list">
+							<a href="#" class="b-catalog-item">
+								<div class="b-catalog-item-img">
+									<img src="i/item-1.jpg">
+									<img src="i/item-6.jpg" class="hover">
+								</div>
+								<div class="b-catalog-item-text">Платье розовое волшебство</div>
+								<div class="b-catalog-item-text">16 500 руб.</div>
+							</a>
+							<a href="#" class="b-catalog-item">
+								<div class="b-catalog-item-img">
+									<img src="i/item-2.jpg">
+									<img src="i/item-7.jpg" class="hover">
+								</div>
+								<div class="b-catalog-item-text">Тёмно-зеленое платье</div>
+								<div class="b-catalog-item-text">12 800 руб.</div>
+							</a>
+							<a href="#" class="b-catalog-item">
+								<div class="b-catalog-item-img">
+									<img src="i/item-3.jpg">
+									<img src="i/item-8.jpg" class="hover">
+								</div>
+								<div class="b-catalog-item-text">Длинное платье с&nbsp;узорами</div>
+								<div class="b-catalog-item-text">5 200 руб.</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="b-content">
