@@ -179,4 +179,36 @@
 				</div>
 			</div>
 		</div>
+		<div class="b-menu">
+			<div class="b-block clearfix">
+				<div class="b-menu-section">
+					<a href="#" class="main-item">Каталог</a>
+					<ul>
+						<li><a href="#">Новогодняя коллекция</a></li>
+						<li><a href="#">Новогодняя коллекция</a></li>
+						<li><a href="#">Новогодняя коллекция</a></li>
+						<li><a href="#">Новогодняя коллекция</a></li>
+						<li><a href="#">Новогодняя коллекция</a></li>
+						<li><a href="#">Новогодняя коллекция</a></li>
+					</ul>
+				</div>
+				<div class="b-menu-section">
+					<a href="#" class="main-item">Справка</a>
+					<ul>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Политика конфиденциальности</a></li>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Политика конфиденциальности</a></li>
+					</ul>
+				</div>
+				<div class="b-menu-section">
+					<a href="#" class="main-item">Будьте с нами</a>
+					<ul>
+						<li><a href="#">Вконтакте</a></li>
+						<li><a href="#">Вконтакте</a></li>
+						<li><a href="#">Вконтакте</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 		<div class="b-content">

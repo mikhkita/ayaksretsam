@@ -280,7 +280,7 @@ $(document).ready(function(){
     });
 
     $('.b-menu-overlay').on('click', function(){
-        $('html').removeClass('cart-open');
+        $('html').removeClass('cart-open menu-open');
     });
 
     $('.b-cart-close').on('click', function(){
@@ -494,14 +494,19 @@ $(document).ready(function(){
 
     $(".b-header .b-search-icon").on("click", function(){
         if($("html").hasClass("search-open")){
-            $("html").removeClass("search-open");
-            //сбросить результаты
-            $(".b-input-search .b-clear-input").click();
-            $(".b-search-result-list").html("");
+            closeSearch();
         }else{
+            $("html").removeClass("menu-open");//закрыть меню
             $("html").addClass("search-open");
         }
     });
+
+    function closeSearch() {
+        $("html").removeClass("search-open");
+        //сбросить результаты
+        $(".b-input-search .b-clear-input").click();
+        $(".b-search-result-list").html("");
+    }
 
     var searchTemplate = $('#search-result-template').html();
     var compiledTemplate = Template7.compile(searchTemplate);
@@ -563,6 +568,19 @@ $(document).ready(function(){
     });
 
 /***************** search *************************/
+
+/***************** menu *************************/
+
+$(".b-header .b-menu-icon").on("click", function(){
+    if($("html").hasClass("menu-open")){
+        $("html").removeClass("menu-open");
+    }else{
+        $("html").addClass("menu-open");
+        closeSearch();
+    }
+});
+
+/***************** menu *************************/
 
 /******************************************/
 
