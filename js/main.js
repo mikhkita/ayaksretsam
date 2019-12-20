@@ -27,6 +27,8 @@ $(document).ready(function(){
             isMobile = true;
         }
 
+        positionSearch();
+
         // if(heightOrig && !isMobile) {
         //     var docHeight = (myHeight - 40 > heightOrig) ? heightOrig : myHeight - 40;
         //     $(".b-detail-right").height(docHeight);
@@ -70,6 +72,14 @@ $(document).ready(function(){
 
     if( !isMobile && $('.stick').length) {
         $(".stick").stick_in_parent({offset_top: 40});  
+    }
+
+    function positionSearch() {
+        if($(".b-search-content").hasClass("results-open")){
+            $(".b-search-content").css("top", String($(".b-header").outerHeight() + 30) + "px");
+        }else{
+            $(".b-search-content").css("top", String(window.innerHeight/2 - 29 + $(".b-header").outerHeight()/2) + "px");
+        }
     }
 
 /***************** slider with drag *************************/
@@ -483,7 +493,14 @@ $(document).ready(function(){
 /***************** search *************************/
 
     $(".b-header .b-search-icon").on("click", function(){
-        $("html").toggleClass("search-open");
+        if($("html").hasClass("search-open")){
+            $("html").removeClass("search-open");
+            //сбросить результаты
+            $(".b-input-search .b-clear-input").click();
+            $(".b-search-result-list").html("");
+        }else{
+            $("html").addClass("search-open");
+        }
     });
 
     var searchTemplate = $('#search-result-template').html();
@@ -499,6 +516,7 @@ $(document).ready(function(){
             $(".b-search-content").removeClass("results-open");
             $(".b-search-result-content").removeClass("show");
         }
+        positionSearch();
     });
 
     $(document).on("submit", ".b-search-form", function(){
@@ -540,7 +558,7 @@ $(document).ready(function(){
     });
 
     $(document).on("click", ".b-clear-input", function(){
-        $(this).parent().children("input").val("").trigger("input")
+        $(this).parent().children("input").val("").trigger("input");
         $(this).removeClass("show");
     });
 
