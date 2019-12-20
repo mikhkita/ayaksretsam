@@ -139,8 +139,24 @@
 			</div>
 		</div>
 		<div class="b-search">
+			<script id="search-result-template" type="text/template7">
+				{{#if status}}
+					{{#each items}}
+					    <a href="{{url}}" class="b-catalog-item">
+							<div class="b-catalog-item-img">
+								<img src="{{img}}">
+								<img src="{{img_hover}}" class="hover">
+							</div>
+							<div class="b-catalog-item-text">{{name}}</div>
+							<div class="b-catalog-item-text">{{price}} руб.</div>
+						</a>
+					{{/each}}
+				{{else}}
+					<h2 class="search-empty">{{errorMsg}}</h2>
+				{{/if}}
+			</script>
 			<div class="b-search-content">
-				<form method="" action="" class="b-search-form">
+				<form method="GET" action="search.php" class="b-search-form" id="b-search-form">
 					<div class="b-input-search">
 						<button class="b-search-icon icon"></button>
 						<input type="text" name="q" class="input-search" placeholder="Поиск по сайту">
@@ -150,34 +166,14 @@
 				</form>
 				<div class="b-block">
 					<div class="b-catalog-cont b-search-result">
-						<div class="b-catalog-menu">
-							<h2>Результаты поиска</h2>
-						</div>
-						<div class="b-catalog-list">
-							<a href="#" class="b-catalog-item">
-								<div class="b-catalog-item-img">
-									<img src="i/item-1.jpg">
-									<img src="i/item-6.jpg" class="hover">
-								</div>
-								<div class="b-catalog-item-text">Платье розовое волшебство</div>
-								<div class="b-catalog-item-text">16 500 руб.</div>
-							</a>
-							<a href="#" class="b-catalog-item">
-								<div class="b-catalog-item-img">
-									<img src="i/item-2.jpg">
-									<img src="i/item-7.jpg" class="hover">
-								</div>
-								<div class="b-catalog-item-text">Тёмно-зеленое платье</div>
-								<div class="b-catalog-item-text">12 800 руб.</div>
-							</a>
-							<a href="#" class="b-catalog-item">
-								<div class="b-catalog-item-img">
-									<img src="i/item-3.jpg">
-									<img src="i/item-8.jpg" class="hover">
-								</div>
-								<div class="b-catalog-item-text">Длинное платье с&nbsp;узорами</div>
-								<div class="b-catalog-item-text">5 200 руб.</div>
-							</a>
+						<div class="search-preloader"></div>
+						<div class="b-search-result-content">
+							<div class="b-catalog-menu">
+								<h2 class="search-result-title">Результаты поиска</h2>
+							</div>
+							<div class="b-search-result-list b-catalog-list">
+
+							</div>
 						</div>
 					</div>
 				</div>

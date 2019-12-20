@@ -87,6 +87,7 @@
 <script type="text/javascript" src="js/KitAnimate.js"></script>
 <script type="text/javascript" src="js/slideout.min.js"></script>
 <script type="text/javascript" src="js/mask.js"></script>
+<script type="text/javascript" src="js/template7.min.js"></script>
 <script type="text/javascript" src="js/KitSend.js"></script>
 <script type="text/javascript" src="js/main.js?<?=$version?>"></script>
 </body>
