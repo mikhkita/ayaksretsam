@@ -180,7 +180,7 @@
 			</div>
 		</div>
 		<div class="b-menu">
-			<!-- <div class="b-block b-menu-desktop clearfix">
+			<div class="b-block b-menu-desktop clearfix">
 				<div class="b-menu-section">
 					<a href="#" class="main-item">Каталог</a>
 					<ul>
@@ -209,7 +209,7 @@
 						<li><a href="#">Вконтакте</a></li>
 					</ul>
 				</div>
-			</div> -->
+			</div>
 			<div class="b-menu-mobile">
 				<ul class="b-menu-mobile-list">
 					<li>
@@ -228,6 +228,7 @@
 							<li><a href="#">Новогодняя коллекция</a></li>
 							<li><a href="#">Новогодняя коллекция</a></li>
 						</ul>
+						<div class="icon b-arrow-right"></div>
 					</li>
 					<li><a href="#">О компании</a></li>
 					<li><a href="#">Условия доставки</a></li>
@@ -242,7 +243,7 @@
 					<li><a href="instagram.com" class="icon soc-instagram">Instagram</a></li>
 					<li><a href="youtube.com" class="icon soc-youtube">Youtube</a></li>
 				</ul>
-				<div class="slide-cont"></div>
+				<div class="b-menu-mobile-list slide-cont"></div>
 			</div>
 		</div>
 		<div class="b-content">

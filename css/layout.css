@@ -978,6 +978,10 @@ input:-moz-placeholder {
 
 /******************   menu   *******************/
 
+.b-menu-mobile{
+	display: none;
+}
+
 .b-menu{
 	position: absolute;
 	z-index: 15;
@@ -1039,14 +1043,30 @@ input:-moz-placeholder {
 .b-menu-mobile{
 	padding: 0 32px;
 }
-	.b-menu-mobile ul{
+	.b-menu-mobile .b-menu-mobile-list{
 		
 	}
-		.b-menu-mobile ul li{
+		.b-menu-mobile .b-menu-mobile-list li{
+			position: relative;
 			border-bottom: 1px solid #E6E6E6;
 		}
-			.b-menu-mobile ul li a{
+		.b-menu-mobile .b-menu-mobile-list li .b-arrow-right{
+			position: absolute;
+			top: 50%;
+			right: 0;
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			-o-transform: translateY(-50%);
+			transform: translateY(-50%);
+			width: 8px;
+			height: 14px;
+		}
+		.b-menu-mobile .b-menu-mobile-list li .b-arrow-right:before{
+			font-size: 14px;
+		}
+			.b-menu-mobile .b-menu-mobile-list li a{
 				display: inline-block;
+				width: 100%;
 				padding: 17px 0 15px 0;
 				font-size: 16px;
     			line-height: 22px;
@@ -1199,6 +1219,15 @@ input:-moz-placeholder {
 			    line-height: 28px;
 			    margin-bottom: 16px;
 			}
+}
+
+@media screen and (max-width: 768px) {
+	.b-menu-desktop{
+		display: none;
+	}
+	.b-menu-mobile{
+		display: block;
+	}
 }
 
 /******************   menu   *******************/
