@@ -180,7 +180,7 @@
 			</div>
 		</div>
 		<div class="b-menu">
-			<div class="b-block clearfix">
+			<!-- <div class="b-block b-menu-desktop clearfix">
 				<div class="b-menu-section">
 					<a href="#" class="main-item">Каталог</a>
 					<ul>
@@ -209,6 +209,40 @@
 						<li><a href="#">Вконтакте</a></li>
 					</ul>
 				</div>
+			</div> -->
+			<div class="b-menu-mobile">
+				<ul class="b-menu-mobile-list">
+					<li>
+						<a href="#">Каталог</a>
+						<ul class="b-menu-sub">
+							<li><a href="#">Новогодняя коллекция</a></li>
+							<li><a href="#">Новогодняя коллекция</a></li>
+							<li><a href="#">Новогодняя коллекция</a></li>
+							<li><a href="#">Новогодняя коллекция</a></li>
+							<li><a href="#">Новогодняя коллекция</a></li>
+							<li><a href="#">Новогодняя коллекция</a></li>
+							<li><a href="#">Новогодняя коллекция</a></li>
+							<li><a href="#">Новогодняя коллекция</a></li>
+							<li><a href="#">Новогодняя коллекция</a></li>
+							<li><a href="#">Новогодняя коллекция</a></li>
+							<li><a href="#">Новогодняя коллекция</a></li>
+							<li><a href="#">Новогодняя коллекция</a></li>
+						</ul>
+					</li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Условия доставки</a></li>
+					<li><a href="#">Условия обмена и возврата</a></li>
+					<li><a href="#">Информация об оплате</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Политика конфиденциальности</a></li>
+				</ul>
+				<ul class="b-social clearfix">
+					<li><a href="vk.com" class="icon soc-vk">Вконтакте</a></li>
+					<li><a href="facebook.com" class="icon soc-facebook">Facebook</a></li>
+					<li><a href="instagram.com" class="icon soc-instagram">Instagram</a></li>
+					<li><a href="youtube.com" class="icon soc-youtube">Youtube</a></li>
+				</ul>
+				<div class="slide-cont"></div>
 			</div>
 		</div>
 		<div class="b-content">

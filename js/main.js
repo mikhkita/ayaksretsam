@@ -580,6 +580,30 @@ $(".b-header .b-menu-icon").on("click", function(){
     }
 });
 
+$(".b-menu-mobile a").on("click", function(){
+    if($(this).siblings(".b-menu-sub").length){
+
+        var $items = $(this).siblings(".b-menu-sub").clone();
+        var $cont = $(".slide-cont");
+        $cont.append("<h3 class='mobile-window-back'>"+"<div class='icon b-arrow-left'></div>"+$(this).text()+"</h3>");
+        $cont.append($items);
+
+        $(".mobile-window-back").click(function(){
+            var $target = $(this).parent();
+            $target.removeClass("open");
+            setTimeout(function () {
+                $target.html("");
+            }, 200);
+        });
+
+        setTimeout(function () {
+            $cont.addClass("open");
+        }, 10);
+
+        return false;
+    }
+});
+
 /***************** menu *************************/
 
 /******************************************/
