@@ -180,7 +180,7 @@
 			</div>
 		</div>
 		<div class="b-menu">
-			<div class="b-block b-menu-desktop clearfix">
+			<div class="b-menu-desktop b-block clearfix">
 				<div class="b-menu-section">
 					<a href="#" class="main-item">Каталог</a>
 					<ul>
@@ -219,14 +219,6 @@
 							<li><a href="#">Новогодняя коллекция</a></li>
 							<li><a href="#">Новогодняя коллекция</a></li>
 							<li><a href="#">Новогодняя коллекция</a></li>
-							<li><a href="#">Новогодняя коллекция</a></li>
-							<li><a href="#">Новогодняя коллекция</a></li>
-							<li><a href="#">Новогодняя коллекция</a></li>
-							<li><a href="#">Новогодняя коллекция</a></li>
-							<li><a href="#">Новогодняя коллекция</a></li>
-							<li><a href="#">Новогодняя коллекция</a></li>
-							<li><a href="#">Новогодняя коллекция</a></li>
-							<li><a href="#">Новогодняя коллекция</a></li>
 						</ul>
 						<div class="icon b-arrow-right"></div>
 					</li>
@@ -237,11 +229,11 @@
 					<li><a href="#">Контакты</a></li>
 					<li><a href="#">Политика конфиденциальности</a></li>
 				</ul>
-				<ul class="b-social clearfix">
-					<li><a href="vk.com" class="icon soc-vk">Вконтакте</a></li>
-					<li><a href="facebook.com" class="icon soc-facebook">Facebook</a></li>
-					<li><a href="instagram.com" class="icon soc-instagram">Instagram</a></li>
-					<li><a href="youtube.com" class="icon soc-youtube">Youtube</a></li>
+				<ul class="b-social">
+					<li><a href="//vk.com" class="icon soc-vk">Вконтакте</a></li>
+					<li><a href="//facebook.com" class="icon soc-facebook">Facebook</a></li>
+					<li><a href="//instagram.com" class="icon soc-instagram">Instagram</a></li>
+					<li><a href="//youtube.com" class="icon soc-youtube">Youtube</a></li>
 				</ul>
 				<div class="b-menu-mobile-list slide-cont"></div>
 			</div>

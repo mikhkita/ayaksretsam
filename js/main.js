@@ -21,13 +21,26 @@ $(document).ready(function(){
 
         if( myWidth > 1199 ){
             isDesktop = true;
+            isTablet = false;
+            isMobile = false;
         }else if( myWidth > 767 ){
+            isDesktop = false;
             isTablet = true;
+            isMobile = false;
         }else{
+            isDesktop = false;
+            isTablet = false;
             isMobile = true;
         }
 
         positionSearch();
+
+        //Пересчитать высоту мобильного меню
+        if(isMobile){
+            $(".b-menu-mobile").css("height", String(window.innerHeight - $(".b-header").outerHeight()) + "px");
+        }else{
+            $(".b-menu-mobile").css("height", "auto");
+        }
 
         // if(heightOrig && !isMobile) {
         //     var docHeight = (myHeight - 40 > heightOrig) ? heightOrig : myHeight - 40;
@@ -427,12 +440,12 @@ $(document).ready(function(){
     })
 
     $(document).on('scroll', function(){
-        changeHoverImg();
+        changeHoverImg(false);
     });
 
     changeHoverImg(true);
 
-    function changeHoverImg(isFirst = false){
+    function changeHoverImg(isFirst){
 
         var flag = false;
         var arImg = [];
@@ -496,8 +509,8 @@ $(document).ready(function(){
         if($("html").hasClass("search-open")){
             closeSearch();
         }else{
-            $("html").removeClass("menu-open");//закрыть меню
             $("html").addClass("search-open");
+            closeMenu();
         }
     });
 
@@ -573,12 +586,20 @@ $(document).ready(function(){
 
 $(".b-header .b-menu-icon").on("click", function(){
     if($("html").hasClass("menu-open")){
-        $("html").removeClass("menu-open");
+        closeMenu();
     }else{
         $("html").addClass("menu-open");
         closeSearch();
     }
 });
+
+function closeMenu () {
+    $("html").removeClass("menu-open");
+    $(".slide-cont").removeClass("open");
+    setTimeout(function () {
+       $(".slide-cont").html("");
+    }, 200);
+}
 
 $(".b-menu-mobile a").on("click", function(){
     if($(this).siblings(".b-menu-sub").length){

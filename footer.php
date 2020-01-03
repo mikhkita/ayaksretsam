@@ -80,15 +80,18 @@
 <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false&key=AIzaSyD6Sy5r7sWQAelSn-4mu2JtVptFkEQ03YI"></script>
 <script type="text/javascript" src="js/jquery.sticky.js"></script>
 <script type="text/javascript" src="js/jquery.touch.min.js"></script>
-<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 <script type="text/javascript" src="js/jquery.validate.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
 <script type="text/javascript" src="js/KitCarousel.js"></script>
 <script type="text/javascript" src="js/KitAnimate.js"></script>
 <script type="text/javascript" src="js/slideout.min.js"></script>
-<script type="text/javascript" src="js/mask.js"></script>
+<? if( !(strpos($_SERVER['HTTP_USER_AGENT'],'MSIE')!==false || strpos($_SERVER['HTTP_USER_AGENT'],'rv:11.0')!==false) ): ?>
+	<script type="text/javascript" src="js/imask.min.js"></script>
+<? else: ?>
+	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+<? endif; ?>
 <script type="text/javascript" src="js/template7.min.js"></script>
-<script type="text/javascript" src="js/KitSend.js"></script>
+<script type="text/javascript" src="js/KitSend.js?<?=$version?>"></script>
 <script type="text/javascript" src="js/main.js?<?=$version?>"></script>
 </body>
 </html>
